@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admindash</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="Adash.css">
+    <!-- css// -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white font-weight-bold">
+        <a class="navbar-brand" href="#">SOCIOVATION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="AdminDash.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" href="">Ask for help</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="Aoth.html">Offer for help</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" href="#">Admin</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Support <i class="fas fa-info-circle text-primary"></i>
+                    </a>
+                    <div class="dropdown-menu p-2 text-muted" style="max-width: auto;">
+                        <p class="mb-0 text-dark">
+                            support@sociovation.com
+                        </p>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Sign out</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" readonly><i class="fas fa-user-circle text-success"></i></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5">
+                <div class="row mb-5">
+                    <div class="col-md-1">
+                        <img src="user-.png" alt=" " class="rounded-circle border" style="height: 65px;">
+                    </div>
+                    <div class="col-md-11">
+                        <p class="h4 font-weight-bold">ORG/NGO</p>
+                        <p class="h5 text-muted">My, Bio </p>
+                        <button class="mt-2 btn text-white bg-primary badge-pill">+ Follow</button>	
+                    </div>
+                </div>
+                <nav>
+                    <div class="nav nav-tabs font-weight-bold" id="nav-tab" role="tablist">
+                        <a class="nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                            aria-controls="nav-home" aria-selected="true">About</a>
+                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                            aria-controls="nav-profile" aria-selected="false">Offers</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">History</a>
+                        <!-- <a class="nav-link" id="nav-his-tab" data-toggle="tab" href="#nav-his" role="tab"
+                            aria-controls="nav-his" aria-selected="false">Getting Started</a>
+                        <a class="nav-link" id="nav-mem-tab" data-toggle="tab" href="#nav-mem" role="tab"
+                            aria-controls="nav-mem" aria-selected="false">Members</a> -->
+                        <a class="nav-link" id="nav-edi-tab" data-toggle="tab" href="#nav-edi" role="tab"
+                            aria-controls="nav-edi" aria-selected="false">Edit</a>
+                    </div>
+
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active mt-4 mb-2" id="nav-home" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p class="h5 pl-3">About</p>
+                            </div>
+                            <div class="col-md-10 text-muted">
+                                <p>Nil  </p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row mt-2">
+                            <div class="col-md-2">
+                                <p class="h5 pl-3"> Contact</p>
+                            </div>
+                            <div class="col-md-10 text-muted">
+                                <p>Nil  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                        <div class="row mt-5">
+                            <div class="col-3 border-right">
+                                <p class="font-weight-bold">
+                                    Topics
+                                </p>
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">See all</a>
+                                    <!-- <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a> -->
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <section id="offers">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
+                                        <!-- req -->
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="edit border-0 text-right">
+
+                                                <p class="text-muted pt-2"><i class="fas fa-edit text-primary"></i> <i class="far fa-trash-alt pr-2"></i></p>
+                                            </div>
+                                            <img src="required.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Org/NGO</h5>
+                                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                              <a href="#" class="btn btn-primary">Apply Now</a>
+                                            </div>
+                                          </div>
+                                        <!-- req// -->
+                                    </div>
+                                    <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div> -->
+        
+                                </div>
+                            </section>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="card mt-2" style="width: 18rem;">
+                            <img src="required.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Org/NGO</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                              <a href="#" class="btn btn-primary">Apply Now</a>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- <div class="tab-pane fade" id="nav-his" role="tabpanel" aria-labelledby="nav-his-tab">
+                        
+                    </div> -->
+                    <!-- <div class="tab-pane fade" id="nav-mem" role="tabpanel" aria-labelledby="nav-mem-tab">
+                    </div> -->
+                    <div class="tab-pane fade" id="nav-edi" role="tabpanel" aria-labelledby="nav-edi-tab">
+                        <div class="container-fluid">
+                            <div class="row mb-5 mt-4">
+                                <div class="col-md-2">
+                                    <img src="user-.png" alt=" " class="rounded-circle border" style="height: 150px;">
+                                </div>
+                                <div class="col-md-8 mt-4">
+                                    <p class="h4 font-weight-bold ">ORG/NGO</p>
+                                    <div>
+                                        <button type="button" class="btn badge-pill btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Edit Profile
+                                        </button>
+                                        <a class="btn badge-pill btn-primary  mr-0" href="#" role="button">
+                                            Verify Identity</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button trigger modal -->
+
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="h4">
+                                                        Your name
+                                                    </p>
+                                                    <p>Set your nickname and your formal name to help people to
+                                                        recoginise you.</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mt-3">
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="h4">
+                                                        Profile Photo
+                                                    </p>
+                                                    <p>Upload a photo to help people to recognise you and reflect your
+                                                        character.</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mt-3">
+                                                    <div class="input-group mb-3">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input"
+                                                                id="inputGroupFile02">
+                                                            <label class="custom-file-label" for="inputGroupFile02"
+                                                                aria-describedby="inputGroupFileAddon02">Choose
+                                                                file</label>
+                                                        </div>
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"
+                                                                id="inputGroupFileAddon02">Upload</span>
+                                                        </div>
+                                                    </div>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="h4">
+                                                        Contact details
+                                                    </p>
+                                                    <p>How do you want people to get in touch with you? Other people can
+                                                        only see this if you let them 🤫.</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mt-3">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Email address</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Phone</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Address</label>
+                                                            <input type="varchar" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                    </form>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="h4">
+                                                        Activity Recommendations
+                                                    </p>
+                                                    <p>This section helps us find the right things for you to do. Tell
+                                                        us the region you in and your skills and interests. Use keywords
+                                                        like: accounting, video conferencing etc.</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mt-3">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">In what regions do you want
+                                                                to volunteer</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Skills &
+                                                                Interests</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                    </form>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="h4">
+                                                        Bio
+                                                    </p>
+                                                    <p>Optional: Tell the people you will be volunteering for something
+                                                        about yourself. And How we should address you..</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mt-3">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">About you</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                    </form>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="h4">
+                                                        Social Media </p>
+                                                    <p>optional: Share your social media links so the groups you work
+                                                        with can follow your social network.</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mt-3">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Facebook</label>
+                                                            <input type="varchar" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Twitter</label>
+                                                            <input type="varchar" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Website</label>
+                                                            <input type="varchar" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                    </form>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="h4">
+                                                        Work & Education </p>
+                                                    <p>Tell the people your education, place of work and job to help
+                                                        people know you better and help find recommendations.</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mt-3">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Education</label>
+                                                            <input type="varchar" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Where is your place of
+                                                                Work</label>
+                                                            <input type="varchar" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">What is your Job
+                                                                Title?</label>
+                                                            <input type="varchar" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                    </form>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p class="h4 font-weight-bold">How do you want to use Voluntarily?</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8 mt-3">
+                                            <div class="shadow pl-3">
+                                                <p class="pt-2 pb-2 h4  font-weight-bold">
+                                                    Ask for help from volunteer
+                                                </p>
+                                                <p>Need volunteers to help you out with an Activity. See what is
+                                                    available
+                                                    and ask for help.
+                                                </p>
+                                            
+
+                                            </div>
+                                            <div class="shadow pl-3">
+                                                <p class="pt-2 pb-2 h4  font-weight-bold">
+                                                    Offer to help people
+                                                </p>
+                                                <p>Want to volunteer your time, or resources to help out someone in
+                                                    need? See what is needed and offer your skills..</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p class="h4 font-weight-bold">Your Interests</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8 mt-3">
+                                            <div class="shadow pl-3">
+                                                <p class="pt-2 pb-2 h4  font-weight-bold">
+                                                    Small Businesses
+                                                </p>
+                                                <p>Help small businesses with technical and HR issues</p>
+                                            </div>
+                                            <div class="shadow pl-3">
+                                                <p class="pt-2 pb-2 h4  font-weight-bold">
+                                                    Communities
+                                                </p>
+                                                <p>Offer your skills and time to your community</p>
+                                            </div>
+                                            <div class="shadow pl-3">
+                                                <p class="pt-2 pb-2 h4  font-weight-bold">
+                                                    Schools
+                                                </p>
+                                                <p>Offer your skills and time to students and teachers</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row pl-3">
+                                <div class="col-md-3">
+                                    <p class="h4 font-weight-bold">About</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8">
+                                            Interests and Skills
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row pl-3">
+                                <div class="col-md-3">
+                                    <p class="h4 font-weight-bold">Contact</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8">
+                                            Email
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row pl-3">
+                                <div class="col-md-3">
+                                    <p class="h4 font-weight-bold">Organisations</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8">
+                                            nil
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row pl-3">
+                                <div class="col-md-3">
+                                    <p class="h4 font-weight-bold">Recognition</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-8">
+                                            nil
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row pb-4 ">
+                <div class="col-md-4">
+                    <img src="" class="mx-auto d-block mt-5 pl-3" style="height: 50px;" alt="...">
+                    <p class="pl-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum voluptates
+                        sint
+                        natus
+                        perspiciatis id voluptas vero magni, nam odio accusantium numquam eum, fugit a quisquam quod
+                        modi molestiae maxime perferendis.</p>
+                    <p class="pl-3">SOCIOVATION</p>
+                </div>
+                <div class="col-md-4 text-center mt-5 pl-3">
+                    <p class="font-weight-bold">
+                        Project
+                    <ul>
+                        <a href="" class="text-dark text-decoration-none">Privacy Policy</a>
+                    </ul>
+                    <ul>
+                        <a href="" class="text-dark text-decoration-none">Term Condition</a>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mt-5">
+                    <p class="font-weight-bold">
+                        Social
+                    </p>
+
+                    <a href="" class="text-dark text-decoration-none">
+                        Twitter</a> <br>
+
+                    <a href="" class="text-dark text-decoration-none">LinkedIn</a><br>
+
+                    <a href="" class="text-dark text-decoration-none">Facebook</a><br>
+
+                    <a href="" class="text-dark text-decoration-none">Instagram</a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer// -->
+</body>
+
+<!-- js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+<!-- js// -->
+
+</html>
