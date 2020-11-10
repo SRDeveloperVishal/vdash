@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View Details</title>
     <!-- css -->
+    <link rel="stylesheet" href="view.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="oth.css">
     <!-- css// -->
 </head>
 
 <body>
-    <!-- nav -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white font-weight-bold">
         <a class="navbar-brand" href="#">SOCIOVATION</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -25,13 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="vdash.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="AdminDash.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link active" href="oth.html">Ask for help</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link active" href="oth.html">Offer for help</a>
+                    <a class="nav-link active" href="Aoth.html">Offer for help</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
@@ -54,66 +53,99 @@
             </ul>
         </div>
     </nav>
-    <!-- nav// -->
-    <!-- container -->
+    <!-- main container -->
     <div class="container-fluid main">
         <div class="row">
-            <div class="col-md-12">
-                <p class="h2 font-weight-bold">
-                    People are asking for help with
-                </p>
-                <p class="text-muted">
-                    Find activities you can offer to help with
-                </p>
-                <hr>
-                <div class="input-group pl-2 pr-2 pt-2 pb-2 shadow rounded">
-                    <input type="text" class="form-control" placeholder="Search..">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary" type="button">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-3 border-right">
-                        <p class="font-weight-bold">
-                            Topics
-                        </p>
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                                aria-controls="v-pills-home" aria-selected="true">See all</a>
-                            <!-- <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a> -->
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                aria-labelledby="v-pills-home-tab">
-                                <p class="pl-2 pr-2 pt-4 pb-2 text-center">
-                                <!-- req -->
-                                <div class="card shadow" style="width: 20rem;">
-                                    <img src="admin/required.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold">Org/NGO</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                        <p><i class="fas fa-user text-danger"></i> 1 Person Required</p>
-                                        <p><i class="far fa-clock"></i> 1 hour commitment</p>
-                                        <a href="#" class="btn btn-primary btn-block">Apply Now</a>
-                                        <a href="#" class="btn btn-success btn-block">View</a>
-                                    </div>
-                                </div>
-                                <!-- req// -->
-                                </p>
-                            </div>
-                            <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div> -->
+            <div class="col-md-8 pl-4">
+                
+                <img src="required.jpg" class="img-fluid" style="height: 300px; width: 100%;"
+                    alt="Responsive image">
+                    <a class="btn badge-pill btn-success  mr-0 text-center mt-3" href="#" role="button">Edit</a>  
+            </div>
 
-                        </div>
-                    </div>
+            <div class="col-md-4 pl-5 pt-5">
+                <i class="fas fa-edit text-primary" style="padding-left: 160px;"></i>
+                <p class="h2 font-weight-bold mb-4">Org/NGO</p>
+                <p><i class="far fa-clock"></i> Duration: 1 hour</p>
+                <p><i class="fas fa-user text-danger"></i> 1 Person Required</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- main container //-->
+    <nav class="mt-5 pl-3">
+        <div class="nav nav-tabs font-weight-bold" id="nav-tab" role="tablist">
+            <a class="nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                aria-controls="nav-home" aria-selected="true">About</a>
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                aria-controls="nav-profile" aria-selected="false"><i class="fas fa-user text-danger"></i> 1 Person
+                Required</a>
+            <!-- <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false"><i class="far fa-clock"></i> 1 hour commitment</a> -->
+            <a class="nav-link" id="nav-his-tab" data-toggle="tab" href="#nav-his" role="tab" aria-controls="nav-his"
+                aria-selected="false">Resources</a> 
+        </div>
+
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active mt-4 mb-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="h3 pl-4">
+                        About
+                    </p>
+                </div>
+                <div class="col-sm-8">
+
+                    <p class="text-muted pt-3">
+                        Tools you can use to plan your work day when you are at home with kids.
+                    </p>
+
+                    <a class="btn badge-pill btn-primary  mr-0 text-center mt-3" href="#" role="button">Update
+                        your profile</a> <a class="btn badge-pill btn-success  mr-0 text-center mt-3" href="#" role="button">Edit</a>
+
+                </div>
+            </div>
+          
+
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="lime-487.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm-6">
+                    <p class="my-clas font-weight-bold h3">
+                        Nobody is offering to help with
+                        Balancing work and kids right now
+                    </p>
+                    <p>Can't see anyone who can help you?</p>
+                    <button type="button" class="btn badge-pill btn-primary">Ask for help</button> <a class="btn badge-pill btn-success  mr-0 text-center" href="#" role="button">Edit</a>
                 </div>
             </div>
         </div>
+        <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <p class="h4 text-center mt-5">Let’s find cool ways to volunteer</p>
+            <p class="text-center text-muted">Get started by finding something to volunteer for</p>
+            <div class="text-center">
+                <a class="btn badge-pill btn-primary  mr-0 text-center" href="#" role="button">
+                    Browse Activities</a>
+            </div>
+        </div> -->
+        <div class="tab-pane fade" id="nav-his" role="tabpanel" aria-labelledby="nav-his-tab">
+                <div class="row mb-5 mt-4">
+                    <div class="col-md-4">
+                       <p class="h4 pl-3">What you will need</p>
+                    </div>
+                    <div class="col-md-8 mt-4">
+                        <p class="h6 font-weight-bold ">🛠️General:   You don't need anything special for this</p>
+                        <hr>
+                        <p class="text-muted">Equipment needed:none</p>
+                        <a class="btn badge-pill btn-success  mr-0 text-center mt-3" href="#" role="button">Edit</a>
+                    </div>
+                </div>
+        </div>   
+              
     </div>
     <!-- footer -->
     <footer>
@@ -160,8 +192,8 @@
         </div>
     </footer>
     <!-- footer// -->
-    <!-- container// -->
 </body>
+
 <!-- js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
