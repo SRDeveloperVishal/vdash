@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="ask.css">
+    <!-- css// -->
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white font-weight-bold">
+        <a class="navbar-brand" href="#">SOCIOVATION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" href="vdash.html">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" href="oth.html">Ask for help</a>
+                </li> -->
+                <li class="nav-item pr-3">
+                    <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown pr-3">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Support <i class="fas fa-info-circle text-primary"></i>
+                    </a>
+                    <div class="dropdown-menu p-2 text-muted" style="max-width: auto;">
+                        <p class="mb-0 text-dark">
+                            support@sociovation.com
+                        </p>
+                    </div>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link active" href="#">Sign in</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" readonly><i class="fas fa-user-circle text-success"></i></a>
+                </li> -->
+
+            </ul>
+        </div>
+    </nav>
+    <!-- nav// -->
+    <!-- container -->
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <div class="row">
+                    <div class="col-md-1 mt-4 text-center">
+                        <a href="#" class="badge-pill  btn-outline-primary btn btn-lg">Back </a>
+                    </div>
+
+                    <div class="col-md-5 border-left">
+                        <p class="h2 font-weight-bold">
+                            Ask for help with
+                        </p>
+                        <p class="h2">
+                            Balancing work and kids
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-5">
+                <p class="h3">
+                    How do you want volunteers to help?
+                </p>
+                <p class="text-muted mb-0">
+                    Is there anything specific you need help with? Let volunteers
+                </p>
+                <p class="text-muted mt-0">
+                    know how to help you by writing about
+                    it here.
+                </p>
+            </div>
+            <div class="col-md-5 text-left">
+                <form action="">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">How do you want volunteers to help?</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <p class="h3">
+                    Where do you need help? (Optional)
+                </p>
+            </div>
+            <div class="col-md-5 text-left mt-3">
+                <form>
+                    <div class="form-group">
+                        <label for="inputAddress">Street <i class="far fa-question-circle"></i></label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Street address">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="suburb">Suburb</label>
+                            <input type="text" class="form-control" id="suburb" placeholder="Suburb">
+                        </div>
+                        <div class="form-group col-md-2"></div>
+                        <div class="form-group col-md-5">
+                            <label for="city">city</label>
+                            <input type="text" class="form-control" id="city" placeholder="city">
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="Postcode">Postcode</label>
+                            <input type="text" class="form-control" id="Postcode" placeholder="Postcode">
+                        </div>
+                        <div class="form-group col-md-2"></div>
+                        <div class="form-group col-md-5">
+                            <label for="Region">Region</label>
+                            <input type="text" class="form-control" id="Region" placeholder="Region">
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <p class="h3">
+                    Where do you need help? (Optional)
+                </p>
+                <p class="text-muted mb-0">
+                    Let people know how much time you need, and if there are only a few dates you can be available.
+                </p>
+            </div>
+            <div class="col-md-5 text-left mt-3">
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="col-md-5">
+                            <p>How much time is needed. <i class="far fa-question-circle"></i>
+                            </p>
+                            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="0">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">hours
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5 mt-4 pt-3">
+                            <label class="sr-only" for="inlineFormInputGroup">0</label>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="0">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">minutes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mt-4 pt-3">
+                            <div class="input-group mb-2">
+                                <input type="date" class="form-control" id="date" value="Select date">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Select date
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div>
+                    <button type="button" class="btn btn-primary badge-pill btn-lg">Done</button> <button type="button"
+                        class="btn btn-outline-primary btn-lg badge-pill">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- container// -->
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row pb-4 ">
+                <div class="col-md-4">
+                    <img src="" class="mx-auto d-block mt-5 pl-3" style="height: 50px;" alt="...">
+                    <p class="pl-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum voluptates
+                        sint
+                        natus
+                        perspiciatis id voluptas vero magni, nam odio accusantium numquam eum, fugit a quisquam quod
+                        modi molestiae maxime perferendis.</p>
+                    <p class="pl-3">SOCIOVATION</p>
+                </div>
+                <div class="col-md-4 text-center mt-5 pl-3">
+                    <p class="font-weight-bold">
+                        Project
+                    <ul>
+                        <a href="" class="text-dark text-decoration-none">Privacy Policy</a>
+                    </ul>
+                    <ul>
+                        <a href="" class="text-dark text-decoration-none">Term Condition</a>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mt-5">
+                    <p class="font-weight-bold">
+                        Social
+                    </p>
+
+                    <a href="" class="text-dark text-decoration-none">
+                        Twitter</a> <br>
+
+                    <a href="" class="text-dark text-decoration-none">LinkedIn</a><br>
+
+                    <a href="" class="text-dark text-decoration-none">Facebook</a><br>
+
+                    <a href="" class="text-dark text-decoration-none">Instagram</a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer// -->
+</body>
+<!-- js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+<!-- js// -->
+
+</html>
